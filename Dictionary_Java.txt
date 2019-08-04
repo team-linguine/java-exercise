@@ -1,0 +1,44 @@
+
+Objects:
+ A Java object is a combination of data and procedures working on the available data. An object has a state and     behavior. The state of an object is stored in fields (variables), while methods (functions) display the object's behavior. Objects are created from templates known as classes.
+  class Person {
+      public String name; //DECLARATION
+      String name = "Somebody's name"; //INITIALIZATION
+
+      public String sayHello() {
+          return String.format("Hello from %s %s!", firstName, lastName);
+      }
+
+      public static void main(String[] args) {
+          Person rick = new Person(); //INSTANTIATION - constructor
+          rick.firstName = "Rick";
+          rick.lastName = "Sanchez";
+          System.out.println(rick.sayHello());
+          // prints "Hello from Rick Sanchez!"
+      }
+  }
+
+
+
+Static Fields:
+ A static field is in programming languages is the declaration for a variable that will be held in common by all instances of a class. The static modifier determines the class variable as one that will be applied universally to all instances of a particular class. ... A static field may also be called a class variable.
+
+
+Instance Fields:
+Instance variable in Java is used by Objects to store their states. Variables which are defined without the STATIC keyword and are Outside any method declaration are Object specific and are known as instance variables. They are called so because their values are instance specific and are not shared among instances.
+
+Each time a program runs, it is an instance of that program. In languages that create objects from classes, an object is an instantiation of a class. That is, it is a member of a given class that has specified values rather than variables. In a non-programming context, you could think of "dog" as a class and your particular dog as an instance of that class.
+
+
+Constructors:
+A Java constructor is special method that is called when an object is instantiated. In other words, when you use the new keyword. The purpose of a Java constructor is to initializes the newly created object before it is used.
+Example - Employee employee = new Employee("Jack", "Daniels", 2000);
+
+Visibility:
+Visibility refers to how a class or instance field is allowed to be accessed. It allows us to encapsulate the data in our classes; that is, only expose what is necessary to other classes and objects.
+Java provides a number of access modifiers to set access levels for classes, variables, methods, and constructors. The four access levels are − Visible to the package, the default. No modifiers are needed. Visible to the class only (private).
+Modifier	                     class	 package  subclass	world
+public	                           y	    y	    y	      y
+protected	                       y	    y	    y	      n
+no modifier (package private)	   y	    y	    n	      n
+private	                           y	    n	    n	      n
