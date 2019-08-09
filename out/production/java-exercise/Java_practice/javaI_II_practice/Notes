@@ -1,0 +1,16 @@
+Notes
+
+Variables:
+All variables in Java must be declared before they are used. A variable declaration includes a type for the variable, as well as a name (a valid identifier) for the variable. Here are some examples of variable declarations:
+    int id;
+    boolean isLoggedIn;
+    float bankAccountBalance;
+
+Variables are initialized when they are assigned a value:
+    id = 123;
+    isLoggedIn = false;
+    bankAccountBalance = 1000.23;
+
+Strings are objects not variables
+
+Methods
